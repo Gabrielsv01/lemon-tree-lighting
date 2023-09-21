@@ -1,5 +1,5 @@
 import React from "react";
-import { residencial } from "../../assets/2023/residencial";
+import { residencial } from "assets/2023/residencial";
 
 const Api: React.FC = () => {
   return JSON.stringify(residencial);
