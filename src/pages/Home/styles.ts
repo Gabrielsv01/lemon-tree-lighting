@@ -29,7 +29,11 @@ export const Content = styled.div`
     padding: ${theme.spacing.small}px;
     margin: ${theme.spacing.small}px;
     width: auto ;
-    `}
+  `}
+
+  ${media.desktop`
+    padding: ${theme.spacing.medium}px ${theme.spacing.zero}px;
+  `}
 
   .MuiFormLabel-root {
     background-color: ${theme.colors.white};
@@ -41,6 +45,11 @@ export const Container = styled.div`
   flex: 1;
   flex-direction: column;
   align-items: center;
+
+  ${media.desktop`
+    justify-content: center;
+    height: 100vh;
+  `}
 `;
 
 export const WrapperDropDown = styled.div`
