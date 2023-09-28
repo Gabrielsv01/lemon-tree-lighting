@@ -64,8 +64,8 @@ const Home: React.FC = () => {
         </S.WrapperDropDown>
         <S.Subtitle>Equatorial</S.Subtitle>
         <S.Description>
-          Iluminação Pública – B4a: {b4aCurrent.value} <br></br> Inicio de
-          Vigência: 03/05/2022 a 02/05/2023
+          Iluminação Pública – B4a: <b>{b4aCurrent.value}</b> <br></br> Inicio
+          de Vigência: <b>{b4aCurrent.start}</b> a <b>{b4aCurrent.end}</b>
         </S.Description>
         {propertyType && !!kwh && (
           <>
