@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import {
   FormControl,
@@ -11,12 +11,14 @@ import {
 import { residencial } from "assets/2023/residencial";
 import { b4aCurrent } from "assets/b4a";
 
+import { PropertyType } from "./types";
+
 import * as S from "./styles";
 
 const Home: React.FC = () => {
-  const [kwh, setKwh] = React.useState(0);
-  const [aliquota, setAliquota] = React.useState(0);
-  const [propertyType, setPropertyType] = React.useState("");
+  const [kwh, setKwh] = useState(0);
+  const [aliquota, setAliquota] = useState(0);
+  const [propertyType, setPropertyType] = useState<PropertyType>();
 
   const calculateAliquota = (value: number) => {
     residencial.forEach((item) => {
@@ -32,7 +34,7 @@ const Home: React.FC = () => {
   };
 
   const handleChange = (event: SelectChangeEvent<string>) => {
-    setPropertyType(event.target.value);
+    setPropertyType(event.target.value as PropertyType);
     calculateAliquota(kwh);
   };
 
