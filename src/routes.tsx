@@ -1,7 +1,8 @@
 import * as React from "react";
+
+import Api from "@pages/Api";
+import Home from "@pages/Home";
 import { createBrowserRouter } from "react-router-dom";
-import Home from "pages/Home";
-import Api from "pages/Api";
 
 const router = createBrowserRouter([
   {

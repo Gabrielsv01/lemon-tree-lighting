@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import media from "theme/media";
-import { theme } from "theme/variables";
+
+import media from "@theme/media";
+import { theme } from "@theme/variables";
 
 export const Title = styled.h1`
   font-size: ${theme.fontSize.xxlarge}px;

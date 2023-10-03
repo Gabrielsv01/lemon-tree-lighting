@@ -8,8 +8,9 @@ import {
   SelectChangeEvent,
   TextField,
 } from "@mui/material";
-import { residencial } from "assets/2023/residencial";
-import { b4aCurrent } from "assets/b4a";
+
+import { residencial } from "@assets/2023/residencial";
+import { b4aCurrent } from "@assets/b4a";
 
 import { PropertyType } from "./types";
 
