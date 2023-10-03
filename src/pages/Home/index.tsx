@@ -1,5 +1,5 @@
 import React from "react";
-import * as S from "./styles";
+
 import {
   FormControl,
   InputLabel,
@@ -9,8 +9,9 @@ import {
   TextField,
 } from "@mui/material";
 import { residencial } from "assets/2023/residencial";
-
 import { b4aCurrent } from "assets/b4a";
+
+import * as S from "./styles";
 
 const Home: React.FC = () => {
   const [kwh, setKwh] = React.useState(0);
