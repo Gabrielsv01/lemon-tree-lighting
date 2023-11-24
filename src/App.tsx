@@ -1,17 +1,31 @@
-import * as React from "react";
+import React from "react";
 
-import * as ReactDOM from "react-dom/client";
-import { RouterProvider } from "react-router-dom";
+import Api from "@pages/Api";
+import Home from "@pages/Home";
+import ReactDOM from "react-dom/client";
+import { HashRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./theme/global.css";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
-import router from "./routes";
+const App = () => (
+  <Routes>
+    {/* <Route  index element={<Home />} /> */}
+    <Route path="/" element={<Home />} />
+    <Route path="/api" element={<Api />} />
+  </Routes>
+);
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
+root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <HashRouter>
+      <App />
+    </HashRouter>
   </React.StrictMode>
 );
