@@ -7,7 +7,8 @@
   "scripts": {
     "start": "VITE_NODE_ENV=development vite --open",
     "start:host": "VITE_NODE_ENV=development vite --open --host",
-    "build": "tsc && vite build  && git add . && git commit -m 'feat(build): build' && git push",
+    "build": "tsc && vite build",
+    "push": "git add . && git commit -m 'feat(build): build' && git push",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
