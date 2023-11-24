@@ -45,7 +45,10 @@ const Home: React.FC = () => {
   return (
     <S.Container>
       <S.Content>
-        <S.Image src="/brasao.png" alt="" />
+        <S.Image
+          src="https://gabrielsv01.github.io/lemon-tree-lighting.github.io/brasao.png"
+          alt=""
+        />
         <S.Title>Limoeiro de Anadia</S.Title>
         <S.Subtitle>Cálculo de iluminação pública</S.Subtitle>
 
