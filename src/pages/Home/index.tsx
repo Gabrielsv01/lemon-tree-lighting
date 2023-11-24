@@ -45,7 +45,7 @@ const Home: React.FC = () => {
   return (
     <S.Container>
       <S.Content>
-        <S.Image src="/brasão.png" alt="" />
+        <S.Image src="/brasao.png" alt="" />
         <S.Title>Limoeiro de Anadia</S.Title>
         <S.Subtitle>Cálculo de iluminação pública</S.Subtitle>
 
