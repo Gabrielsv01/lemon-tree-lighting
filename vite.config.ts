@@ -31,4 +31,7 @@ export default defineConfig({
       "./runtimeConfig": "./runtimeConfig.browser",
     },
   },
+  build: {
+    outDir: "lemon-tree-lighting.github.io",
+  },
 });
