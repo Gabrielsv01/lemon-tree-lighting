@@ -4,16 +4,18 @@ import media from "@theme/media";
 import { theme } from "@theme/variables";
 
 export const Title = styled.h1`
-  font-size: ${theme.fontSize.xxlarge}px;
+  font-size: ${theme.fontSize.xlarge}px;
+  text-align: center;
   margin: ${theme.spacing.zero}px ${theme.spacing.zero}px
     ${theme.spacing.small}px;
 `;
 export const Subtitle = styled.h2`
-  font-size: ${theme.fontSize.xlarge}px;
+  text-align: center;
+  font-size: ${theme.fontSize.large}px;
   margin: ${theme.spacing.xsmall}px ${theme.spacing.zero}px;
 `;
 export const Description = styled.p`
-  font-size: ${theme.fontSize.medium}px;
+  font-size: ${theme.fontSize.small}px;
   margin: ${theme.spacing.zero}px ${theme.spacing.zero}px;
   font-weight: ${theme.fontWeight.regular};
 `;
@@ -23,12 +25,13 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: ${theme.colors.white};
-  width: 580px;
+  max-width: 580px;
+  width: 100%;
+  padding-bottom: ${theme.spacing.large}px;
   border-radius: ${theme.border.radius.regular}px;
 
   ${media.mobile`
     padding: ${theme.spacing.small}px;
-    margin: ${theme.spacing.small}px;
     width: auto ;
   `}
 
@@ -42,24 +45,31 @@ export const Content = styled.div`
 `;
 
 export const Container = styled.div`
+  padding: ${theme.spacing.small}px;
   display: flex;
-  flex: 1;
   flex-direction: column;
   align-items: center;
 
   ${media.desktop`
-    justify-content: center;
-    height: 100vh;
+    padding: ${theme.spacing.xhuge}px ${theme.spacing.zero}px;
   `}
 `;
 
 export const WrapperDropDown = styled.div`
   margin-top: ${theme.spacing.small}px;
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
+
   background-color: ${theme.colors.white};
 `;
 
 export const InputWrapper = styled.div`
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   background-color: ${theme.colors.white};
+`;
+
+export const Image = styled.img`
+  width: 80px;
+  height: 80px;
 `;

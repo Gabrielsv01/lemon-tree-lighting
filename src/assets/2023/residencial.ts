@@ -1,4 +1,6 @@
-export const residencial = [
+import { TaxRateRange } from "types/types";
+
+export const residencial: TaxRateRange[] = [
   { start: 0, end: 30, aliquota: 8.504 },
   { start: 31, end: 50, aliquota: 13.708 },
   { start: 51, end: 60, aliquota: 41.212 },
