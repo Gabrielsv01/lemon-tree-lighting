@@ -1,11 +1,13 @@
 {
+  "homepage": "https://gabrielsv01.github.io/lemon-tree-lighting/",
   "name": "lemon-tree-lighting",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "start": "VITE_NODE_ENV=development vite --open",
+    "start:host": "VITE_NODE_ENV=development vite --open --host",
+    "build": "tsc && vite build ",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
