@@ -4,8 +4,13 @@ const b4a = {
     end: "02/05/2023",
     value: 0.41277,
   },
+  v2: {
+    start: "06/2022",
+    end: "---",
+    value: 0.47634,
+  },
 };
 
-const b4aCurrent = b4a.v1;
+const b4aCurrent = b4a.v2;
 
 export { b4a, b4aCurrent };
